@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택문: switch</title>
+</head>
+<body>
+    <script>
+        let site = prompt("네이버, 다음, 구글 중 즐겨 이용하는 포털 검색 사이트는 무엇입니까?", "0");
+        let url;
+
+        switch(site){
+            case "구글": url = "https://www.google.co.kr/"; 
+            break;
+            case "네이버": url = "https://naver.com"
+            break;
+            case "다음": url = "https://www.daum.net/"
+            break;
+            default: alert("보기에 있는 사이트를 입력해 주세요.");
+        }
+
+        if(url){
+            location.href = url;
+        }
+    </script>
+</body>
+</html>

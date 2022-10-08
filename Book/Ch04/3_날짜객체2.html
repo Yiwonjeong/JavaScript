@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>현재 날짜부터 특정 날짜까지 며칠 남았는지</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+
+        let exam = new Date(2022,10,17);
+
+        // 남은 날 = 특정 날짜 - 현재 날짜 (밀리초 단위))
+        let restDate = exam.getTime() - today.getTime();
+
+        let result = Math.ceil(restDate / (60*1000*60*24));
+        document.write("<h1> 2023 대학수학능력시험까지 " + result + "일 남았습니다 </h1>");
+        
+    </script>
+</body>
+</html>

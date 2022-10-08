@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>중첩 if문</title>
+</head>
+<body>
+    <script>
+        let id = "circle.j";
+        let pw = "221007"
+
+        let user_id = prompt("아이디를 입력해 주세요.");
+        let user_pw = prompt("비밀번호를 입력해 주세요.");
+
+        if(id == user_id){
+            if(pw == user_pw){
+                document.write(user_id + "님, 반갑습니다.");
+            } else {
+                document.write("비밀번호가 일치하지 않습니다.");
+            }
+        }else {
+            document.write("아이디가 일치하지 않습니다.");
+            location.reload(); // 브라우저 새로고침
+        }
+    </script>
+</body>
+</html>
