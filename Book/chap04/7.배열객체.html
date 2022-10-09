@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배열객체 생성</title>
+</head>
+<body>
+    <script>
+        // 방법1
+        let method1 = new Array();
+        method1[0] = 1;
+        method1[1] = "값2"
+        method1[2] = true;
+
+        // 방법2
+        let method2 = new Array(1, "값2", true);
+
+        // 방법3
+        let method3 = [1, "값2", true];
+
+        // 배열값 출력
+        document.write("method1: <n/>");
+        for (let i = 0; i < method1.length; i++){
+            document.write(method1[i] + "&nbsp");
+        }
+
+        document.write("<br> method2: <n/>");
+        for (i in method2){
+            document.write(method2[i] + "&nbsp");
+        }
+
+        document.write("<br> method3: <n/>");
+        for (i in method3){
+            document.write(method3[i] + "&nbsp");
+        }
+    </script>
+</body>
+</html>

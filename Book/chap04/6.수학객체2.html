@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>수학객체: 가위바위보</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>가위 바위 보~?</h1>")
+
+        let game = prompt("Game: 가위 바위 보!","");
+        let gameNum;
+        switch (game){
+            case "가위": gameNum = 1; break;
+            case "바위": gameNum = 2; break;
+            case "보" : gameNum = 3; break;
+            default: alert("가위 바위 보 중 하나를 입력해 주십시오.");
+                     location.reload();
+        }
+        let com = Math.ceil(Math.random()*3);
+        
+        if (gameNum == com){
+            document.write("<h3> 맞췄습니다! </h3>");
+        }else {
+            document.write("<h3> 틀렸습니다.! </h3>");
+        }
+
+    </script>
+</body>
+</html>

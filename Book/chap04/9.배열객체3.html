@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배열 객체 메서드</title>
+</head>
+<body>
+    <script>
+        let hanArr = ["가", "나", "다"];
+        let engArr = ["A", "B", "C"];
+
+        hanArr.splice(2, 1, "라", "마");
+        console.log(hanArr);
+
+        let data1 = engArr.pop();
+        let data2 = engArr.shift();
+        
+        engArr.push(data2);
+        console.log(engArr);
+
+        engArr.unshift(data1);
+        console.log(engArr);
+
+    </script>
+</body>
+</html>
