@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>인접관계선택자</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+           $('ul > li:nth-child(2)').css('border','2px dashed green');
+           $('ol > li:nth-of-type(1)').css('color','red');
+           $('ul > li:eq(3)').css('background','orange');
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>서울특별시</li>
+        <li>광주광역시</li>
+        <li>
+            <span>부산광역시</span>
+            <ol>
+                <li>진구</li>
+                <li>금정구</li>
+                <li>수영구</li>
+            </ol>
+        </li>
+        <li>창원특례시</li>
+    </ul>
+</body>
+</html>
